@@ -1,10 +1,30 @@
 # Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
+ platform :ios, '12.0'
+
+ source 'git@github.com:SpotOnInc/SpotOnPods.git'
+ source 'https://github.com/CocoaPods/Specs.git'
 
 target 'SpotonIosFlex' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
   # Pods for SpotonIosFlex
+
+	#Carlos
+  if File.exist?("/Users/carlosuribe/Documents/networkMaster")
+    pod 'Network', path: '/Users/carlosuribe/Documents/networkMaster'
+  #Dan
+  elsif File.exist?("/Users/danielslowinski/Work/SpotOn/ios-network-framework")
+    pod 'Network', path: '/Users/danielslowinski/Work/SpotOn/ios-network-framework'
+  #Gabriel
+  elsif File.exist?("/Users/gabrielmedina/Programming/iOSProjects/NetworkFrameworkRepo")
+    pod 'Network', path: '/Users/gabrielmedina/Programming/iOSProjects/NetworkFrameworkRepo'
+ #Soumya
+  elsif File.exist?("/Users/soumyamohanty/Documents/Spoton/ios-network-framework")
+    pod 'Network', path: '/Users/soumyamohanty/Documents/Spoton/ios-network-framework'
+  #GitHub
+  else
+    pod 'Network', :git => "git@github.com:SpotOnInc/ios-network-framework.git", :branch => "master"
+  end
 
 end

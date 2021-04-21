@@ -9,13 +9,17 @@
 /* Begin PBXBuildFile section */
 		4CD8B20926303E9900AC9CFA /* SpotonIosFlex.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CD8B20726303E9900AC9CFA /* SpotonIosFlex.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4CD8B212263040E200AC9CFA /* NewService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD8B211263040E200AC9CFA /* NewService.swift */; };
+		51E9C489CBCDFAA3B23C7A5D /* Pods_SpotonIosFlex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72FEDA8A8980D9C83BDF4351 /* Pods_SpotonIosFlex.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F7412C1DF9200189A667A85 /* Pods-SpotonIosFlex.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpotonIosFlex.release.xcconfig"; path = "Target Support Files/Pods-SpotonIosFlex/Pods-SpotonIosFlex.release.xcconfig"; sourceTree = "<group>"; };
 		4CD8B20426303E9900AC9CFA /* SpotonIosFlex.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SpotonIosFlex.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CD8B20726303E9900AC9CFA /* SpotonIosFlex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpotonIosFlex.h; sourceTree = "<group>"; };
 		4CD8B20826303E9900AC9CFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4CD8B211263040E200AC9CFA /* NewService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewService.swift; sourceTree = "<group>"; };
+		72FEDA8A8980D9C83BDF4351 /* Pods_SpotonIosFlex.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpotonIosFlex.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E29B025985FFD0369DC8FCAD /* Pods-SpotonIosFlex.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpotonIosFlex.debug.xcconfig"; path = "Target Support Files/Pods-SpotonIosFlex/Pods-SpotonIosFlex.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -23,17 +27,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51E9C489CBCDFAA3B23C7A5D /* Pods_SpotonIosFlex.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E1438CCAA1375538DCD75E0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E29B025985FFD0369DC8FCAD /* Pods-SpotonIosFlex.debug.xcconfig */,
+				0F7412C1DF9200189A667A85 /* Pods-SpotonIosFlex.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		4CD8B1FA26303E9900AC9CFA = {
 			isa = PBXGroup;
 			children = (
 				4CD8B20626303E9900AC9CFA /* SpotonIosFlex */,
 				4CD8B20526303E9900AC9CFA /* Products */,
+				0E1438CCAA1375538DCD75E0 /* Pods */,
+				E6E70FA072FE498C9682FEC2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,6 +71,14 @@
 			path = SpotonIosFlex;
 			sourceTree = "<group>";
 		};
+		E6E70FA072FE498C9682FEC2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				72FEDA8A8980D9C83BDF4351 /* Pods_SpotonIosFlex.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -73,6 +97,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4CD8B20C26303E9900AC9CFA /* Build configuration list for PBXNativeTarget "SpotonIosFlex" */;
 			buildPhases = (
+				141DD577BFAC946A0B762F8A /* [CP] Check Pods Manifest.lock */,
 				4CD8B1FF26303E9900AC9CFA /* Headers */,
 				4CD8B20026303E9900AC9CFA /* Sources */,
 				4CD8B20126303E9900AC9CFA /* Frameworks */,
@@ -128,6 +153,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		141DD577BFAC946A0B762F8A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SpotonIosFlex-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4CD8B20026303E9900AC9CFA /* Sources */ = {
@@ -193,7 +243,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -251,7 +301,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -265,6 +315,7 @@
 		};
 		4CD8B20D26303E9900AC9CFA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E29B025985FFD0369DC8FCAD /* Pods-SpotonIosFlex.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -275,6 +326,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = SpotonIosFlex/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -291,6 +343,7 @@
 		};
 		4CD8B20E26303E9900AC9CFA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F7412C1DF9200189A667A85 /* Pods-SpotonIosFlex.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -301,6 +354,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = SpotonIosFlex/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

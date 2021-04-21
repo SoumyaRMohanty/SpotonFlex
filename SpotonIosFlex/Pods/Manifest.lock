@@ -1,0 +1,29 @@
+PODS:
+  - CryptoSwift (1.3.8)
+  - Network (1.1.12):
+    - CryptoSwift
+    - Sentry (~> 4.5.0)
+  - Sentry (4.5.0):
+    - Sentry/Core (= 4.5.0)
+  - Sentry/Core (4.5.0)
+
+DEPENDENCIES:
+  - Network (from `/Users/soumyamohanty/Documents/Spoton/ios-network-framework`)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - CryptoSwift
+    - Sentry
+
+EXTERNAL SOURCES:
+  Network:
+    :path: "/Users/soumyamohanty/Documents/Spoton/ios-network-framework"
+
+SPEC CHECKSUMS:
+  CryptoSwift: 01b0f0cba1d5c212e5a335ff6c054fb75a204f00
+  Network: 2b4415205328c7892fa9000a61e8b68336eee013
+  Sentry: ab6c209f23700d1460691dbc90e19ed0a05d496b
+
+PODFILE CHECKSUM: 349a1c0633edd458751a8ca0632c78a580a1baa5
+
+COCOAPODS: 1.10.1

@@ -1,0 +1,41 @@
+{
+  "name": "Network",
+  "version": "1.1.12",
+  "summary": "Network framework for iOS SpotOn Projects.",
+  "description": "Contains all the network related code, models, and other support classes to get, update, and delete data",
+  "homepage": "https://github.com/SpotOnInc/ios-network-framework",
+  "license": "Internal",
+  "authors": {
+    "SpotOn": "dan@spoton.com"
+  },
+  "platforms": {
+    "ios": "12.0"
+  },
+  "swift_versions": "5.0",
+  "source": {
+    "git": "git@github.com:SpotOnInc/ios-network-framework.git",
+    "tag": "1.1.12"
+  },
+  "source_files": "Network/**/*.swift",
+  "ios": {
+    "frameworks": [
+      "AudioToolbox",
+      "CFNetwork",
+      "CoreGraphics",
+      "CoreLocation",
+      "QuartzCore",
+      "Security",
+      "StoreKit",
+      "SystemConfiguration"
+    ]
+  },
+  "dependencies": {
+    "CryptoSwift": [
+
+    ],
+    "Sentry": [
+      "~> 4.5.0"
+    ]
+  },
+  "swift_version": "5.0"
+}

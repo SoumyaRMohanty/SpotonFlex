@@ -65,7 +65,7 @@ Pod::Spec.new do |spec|
   #
 
   # spec.platform     = :ios
-   spec.platform     = :ios, "11.0"
+   spec.platform     = :ios, "12.0"
    spec.swift_version = "5.0"
 
   #  When using multiple platforms
@@ -92,11 +92,13 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "SpotonIosFlex/**/*.{swift}"
+  spec.source_files  = "SpotonIosFlex/**/*.swift"
   # spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
 
+  # spec.dependency 'Network'
+  spec.dependency 'Sentry' , '~> 4.5.0'
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
