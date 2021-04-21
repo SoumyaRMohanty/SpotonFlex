@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		4CD8B20926303E9900AC9CFA /* SpotonIosFlex.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CD8B20726303E9900AC9CFA /* SpotonIosFlex.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4CD8B212263040E200AC9CFA /* NewService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD8B211263040E200AC9CFA /* NewService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4CD8B20426303E9900AC9CFA /* SpotonIosFlex.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SpotonIosFlex.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CD8B20726303E9900AC9CFA /* SpotonIosFlex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpotonIosFlex.h; sourceTree = "<group>"; };
 		4CD8B20826303E9900AC9CFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CD8B211263040E200AC9CFA /* NewService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 			children = (
 				4CD8B20726303E9900AC9CFA /* SpotonIosFlex.h */,
 				4CD8B20826303E9900AC9CFA /* Info.plist */,
+				4CD8B211263040E200AC9CFA /* NewService.swift */,
 			);
 			path = SpotonIosFlex;
 			sourceTree = "<group>";
@@ -94,6 +97,7 @@
 				TargetAttributes = {
 					4CD8B20326303E9900AC9CFA = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 					};
 				};
 			};
@@ -130,6 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CD8B212263040E200AC9CFA /* NewService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +266,7 @@
 		4CD8B20D26303E9900AC9CFA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = AVUQPCCU7T;
@@ -277,6 +283,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.spoton.SpotonIosFlex;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -285,6 +292,7 @@
 		4CD8B20E26303E9900AC9CFA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = AVUQPCCU7T;
